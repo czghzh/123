@@ -126,8 +126,8 @@ Signed-off-by: Lorenzo Bianconi <lorenzo@kernel.org>
 +		tuple->dscp = FIELD_GET(INET_DSCP_MASK,
 +					ipv4_get_dsfield(ip_hdr(skb)));
 +		break;
-case htons(ETH_P_IPV6):
-    return;
++    case htons(ETH_P_IPV6):
++        break;
 +	default:
 +		break;
 +	}
